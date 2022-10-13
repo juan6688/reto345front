@@ -1,0 +1,34 @@
+body{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+table{
+    background: rgb(124, 154, 167);
+}
+
+td{
+    border: 1px solid rgb(204, 200, 200);
+    padding: 8px 15px;
+}
+
+input[type="text"], input[type="number"]{
+    width: 95%;
+}
+
+button, input[type="submit"]{
+    background: #eee;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover, input[type="submit"]:hover{
+    background: #4b99d8;
+}

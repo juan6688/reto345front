@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Gestion Clientes</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="crearClientes()">
+                    <div>
+                        <label for="clienteID">Id</label>
+                        <input type="number" name="clienteID" id="clienteID">
+                    </div>
+                    <div>
+                        <label for="clienteName">Name</label>
+                        <input type="text" name="clienteName" id="clienteName">
+                    </div>
+                    <div>
+                        <label for="clienteEmail">Correo</label>
+                        <input type="text" name="clienteEmail" id="clienteEmail">
+                    </div>
+                    <div>
+                        <label for="clienteAge">Age</label>
+                        <input type="number" name="clienteAge" id="clienteAge">
+                    </div>
+                    <div>
+                        <input type="submit" value="Crear Cliente">
+                    </div>
+                </form>
+                <button onClick="editarCliente()">Editar Cliente</button>
+                <td>
+                    <table id="listaCliente">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Correo</th>
+                                <th>Age</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
