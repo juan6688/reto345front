@@ -7,38 +7,48 @@
 
 <body>
     <h1 class="titlePage">
-        GESTION CATEGORIAS
+        GESTION CLIENTES
     </h1>
     <table>
         <tr>
             <td>
-                <form autocomplete="off" onsubmit="onCategorySubmit()">
+                <form autocomplete="off" onsubmit="onClientSubmit()">
                     <div>
-                        <label for="categoryId">Id</label>
+                        <label for="clientId">Id</label>
                         <p></p>
-                        <input type="text" name="categoryId" id="categoryId">
+                        <input type="text" name="clientId" id="clientId">
                     </div>
                     <div>
-                        <label for="categoryName">Name</label>
-                        <input type="text" name="categoryName" id="categoryName">
+                        <label for="clientName">Name</label>
+                        <input type="text" name="clientName" id="clientName">
                     </div>
                     <div>
-                        <label for="categoryDescription">Description</label>
-                        <input type="text" name="categoryDescription" id="categoryDescription">
+                        <label for="clientEmail">Email</label>
+                        <input type="text" name="clientEmail" id="clientEmail">
+                    </div>
+                    <div>
+                        <label for="clientAge">Age</label>
+                        <input type="text" name="clientAge" id="clientAge">
+                    </div>
+                    <div>
+                        <label for="clientPassword">Password</label>
+                        <input type="text" name="clientPassword" id="clientPassword">
                     </div>
 
                     <div class="form_action--button">
                         <input type="submit" value="Create">
                     </div>
                 </form>
-                <button onClick="categoryUpdate(this)">Edit</button> 
+                <button onClick="clientUpdate(this)">Edit</button> 
                 <td>
-                    <table class="list" id="categoryList">
+                    <table class="list" id="clientList">
                         <thead>
                             <tr>
                                 <th>Id</th>
                                 <th>Name</th>
-                                <th>Description</th>
+                                <th>Email</th>
+                                <th>Age</th>
+                                <th>Password</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -65,10 +75,7 @@
         <h4 class="titlePage">
             <a href="/index.html">GESTION CATEGORY</a>
         </h4>
-        <h4 class="titlePage">
-            <a href="/farm.html">GESTION FARM</a>
-        </h4>
     </div>
-    <script type="text/javascript" src="./js/category.js"></script>
+    <script type="text/javascript" src="./js/client.js"></script>
 </body>
 </html>

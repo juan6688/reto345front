@@ -7,38 +7,48 @@
 
 <body>
     <h1 class="titlePage">
-        GESTION CATEGORIAS
+        GESTION RESERVACIONES
     </h1>
     <table>
         <tr>
             <td>
-                <form autocomplete="off" onsubmit="onCategorySubmit()">
+                <form autocomplete="off" onsubmit="onReservationSubmit()">
                     <div>
-                        <label for="categoryId">Id</label>
+                        <label for="reservationId">Id</label>
                         <p></p>
-                        <input type="text" name="categoryId" id="categoryId">
+                        <input type="text" name="reservationId" id="reservationId">
                     </div>
                     <div>
-                        <label for="categoryName">Name</label>
-                        <input type="text" name="categoryName" id="categoryName">
+                        <label for="reservationStartDate">StartDate</label>
+                        <input type="text" name="reservationStartDate" id="reservationStartDate">
                     </div>
                     <div>
-                        <label for="categoryDescription">Description</label>
-                        <input type="text" name="categoryDescription" id="categoryDescription">
+                        <label for="reservationDevolutionDate">DevolutionDate</label>
+                        <input type="text" name="reservationDevolutionDate" id="reservationDevolutionDate">
+                    </div>
+                    <div>
+                        <label for="reservationClientId">ClientId</label>
+                        <input type="text" name="reservationClientId" id="reservationClientId">
+                    </div>
+                    <div>
+                        <label for="reservationOrtopedicId">OrtopedicId</label>
+                        <input type="text" name="reservationOrtopedicId" id="reservationOrtopedicId">
                     </div>
 
                     <div class="form_action--button">
                         <input type="submit" value="Create">
                     </div>
                 </form>
-                <button onClick="categoryUpdate(this)">Edit</button> 
+                <button onClick="reservationUpdate(this)">Edit</button> 
                 <td>
-                    <table class="list" id="categoryList">
+                    <table class="list" id="reservationList">
                         <thead>
                             <tr>
                                 <th>Id</th>
-                                <th>Name</th>
-                                <th>Description</th>
+                                <th>StartDate</th>
+                                <th>DevolutionDate</th>
+                                <th>ClientId</th>
+                                <th>OrtopedicId</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -65,10 +75,7 @@
         <h4 class="titlePage">
             <a href="/index.html">GESTION CATEGORY</a>
         </h4>
-        <h4 class="titlePage">
-            <a href="/farm.html">GESTION FARM</a>
-        </h4>
     </div>
-    <script type="text/javascript" src="./js/category.js"></script>
+    <script type="text/javascript" src="./js/reservation.js"></script>
 </body>
 </html>
